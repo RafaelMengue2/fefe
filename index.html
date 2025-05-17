@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fefe</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="letter-container">
+        <header class="letter-header">
+            <div class="sender-info">
+                <img src="./imagens/fefe - 1.jpeg" alt="Minha Foto" class="profile-img">
+                <div>
+                    <h1 class="letter-title">Fefe <span>(pigmeu)</span></h1>
+                    <p class="letter-subtitle">Little Church (Famosa Igrejinha), <span id="current-date"></span></p>
+                </div>
+            </div>
+        </header>
+
+        <main class="letter-content">
+            <div class="greeting">
+                <p>Querida <span class="recipient-name">Pigmeu</span>,</p>
+            </div>
+
+            <section class="letter-body">
+                <p>
+                    Não sei nem por onde começar, porque quando penso em você, as palavras parecem ficar pequenas. Mas
+                    vou tentar, porque você merece saber o que sinto – mesmo que eu nunca consiga colocar tudo no papel
+                    direito.
+                    <br>
+                    <br>
+                    O que a gente tem é simples, mas é tão raro. Não é sobre pressa, não é sobre grandiosidade, é sobre
+                    aquele jeito que a gente se encaixa sem forçar. É sobre como um "bom dia" seu me faz sorrir antes
+                    mesmo de eu abrir os olhos direito, ou como três dias longe parecem uma eternidade. É sobre a paz
+                    que sinto quando você fala das suas coisas, das suas inseguranças, dos seus sonhos – e eu penso:
+                    "Como é bom poder ser assim, sem máscaras."
+                    <br>
+                    <br>
+                    Você diz que não é perfeita, e eu só consigo rir, porque perfeição é a coisa mais sem graça que
+                    existe. O que eu quero é você – com seus erros, seus medos, sua risada que talvez ache feia (mas eu
+                    amo), seu jeito de falar até sem dizer nada. Quero os dias bons e os difíceis, porque sei que a
+                    gente vai resolver, mesmo que seja aos tropeços.
+                    <br>
+                    <br>
+                    E sabe o que mais me pega? É que eu não preciso convencer você de nada. A gente só... acontece. E eu
+                    não quero que mude. Quero que continue me escolhendo, como eu escolho você todo santo dia, mesmo
+                    quando a vida ficar cansada ou a rotina tentar enfraquecer a gente.
+                    <br>
+                    <br>
+                    Então, se um dia você duvidar do que sinto, lembra disso aqui: você já é meu porto seguro, meu
+                    impulso, meu "não sei viver sem". E eu não troco isso por nada – nem por uma história de filme,
+                    porque a nossa, sendo nossa, já é a melhor que existe.
+                    <br>
+                    <br>
+                    Te amo. Sem firula, sem exagero. Só te amo. E é assim que quero continuar: devagar, mas sempre.
+                </p>
+
+                <h2 class="section-heading">Músicas que penso sobre <span>Você</span></h2>
+                <p>Isso é engracado, mas agora toda música de amor é sobre e exclusivamente você e eu gosto muito disso.</p>
+
+                <div class="music-section">
+                    <div class="music-card">
+                        <div class="album-cover" style="background-image: url('./imagens/can-i-get-a-kiss.jpg')"></div>
+                        <div class="track-info">
+                            <h3>Can I Get A Kiss</h3>
+                            <p>Tyler, The Creator</p>
+                            <audio id="track1" src="./musga/can-i-get-a-kiss-made-with-Voicemod.mp3"></audio>
+                            <div class="player-controls">
+                                <button class="play-btn" onclick="togglePlay(1)"><i class="fas fa-play"></i></button>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <span class="time">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="music-card">
+                        <div class="album-cover" style="background-image: url('./imagens/tribalistas.jpg')"></div>
+                        <div class="track-info">
+                            <h3>Aliança </h3>
+                            <p>Tribalistas</p>
+                            <audio id="track2" src="./musga/aliança-tribalistas-1-made-with-Voicemod.mp3"></audio>
+                            <div class="player-controls">
+                                <button class="play-btn" onclick="togglePlay(2)"><i class="fas fa-play"></i></button>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <span class="time">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="music-card">
+                        <div class="album-cover" style="background-image: url('./imagens/i-wanna-be.jpg')"></div>
+                        <div class="track-info">
+                            <h3>I Wanna be yours </h3>
+                            <p>Artic Monkeys</p>
+                            <audio id="track3"
+                                src="./musga/i-wanna-be-yours-(edit-audio)-made-with-Voicemod.mp3"></audio>
+                            <div class="player-controls">
+                                <button class="play-btn" onclick="togglePlay(3)"><i class="fas fa-play"></i></button>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <span class="time">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <div class="album-cover" style="background-image: url('./imagens/adama.jpg')"></div>
+                        <div class="track-info">
+                            <h3>A Dama e o Vagabundo</h3>
+                            <p>Oriente</p>
+                            <audio id="track4"
+                                src="./musga/Oriente - Vagabundo e a Dama (part. Mumu Nayah).mp3"></audio>
+                            <div class="player-controls">
+                                <button class="play-btn" onclick="togglePlay(4)"><i class="fas fa-play"></i></button>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <span class="time">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <div class="album-cover" style="background-image: url('./imagens/something.jpg')"></div>
+                        <div class="track-info">
+                            <h3>Something About You</h3>
+                            <p>Eyedress & Dent May</p>
+                            <audio id="track5" src="./musga/Eyedress & Dent May - Something About You.mp3"></audio>
+                            <div class="player-controls">
+                                <button class="play-btn" onclick="togglePlay(5)"><i class="fas fa-play"></i></button>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <span class="time">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <div class="album-cover" style="background-image: url('./imagens/505.jpg')"></div>
+                        <div class="track-info">
+                            <h3>505</h3>
+                            <p>Artic Monkeys</p>
+                            <audio id="track6" src="./musga/505.mp3"></audio>
+                            <div class="player-controls">
+                                <button class="play-btn" onclick="togglePlay(6)"><i class="fas fa-play"></i></button>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <span class="time">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <div class="album-cover" style="background-image: url('./imagens/sand.jpg')"></div>
+                        <div class="track-info">
+                            <h3>Hidden in the Sand</h3>
+                            <p>Tally Hall</p>
+                            <audio id="track7" src="./musga/Tally Hall - Hidden in the Sand.mp3"></audio>
+                            <div class="player-controls">
+                                <button class="play-btn" onclick="togglePlay(7)"><i class="fas fa-play"></i></button>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <span class="time">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <div class="album-cover" style="background-image: url('./imagens/negro.jpg')"></div>
+                        <div class="track-info">
+                            <h3>Just the Two of Us</h3>
+                            <p>Grover Washington, Jr.</p>
+                            <audio id="track8" src="./musga/Just the Two of Us (feat. Bill Withers).mp3"></audio>
+                            <div class="player-controls">
+                                <button class="play-btn" onclick="togglePlay(8)"><i class="fas fa-play"></i></button>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <span class="time">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section-heading">Nosso primeiro <span>encontro</span></h2>
+                <div class="moments-grid">
+                    <div class="moment-card" style="background-image: url(./imagens/date\ 1.jpeg)">
+                        <div class="moment-overlay">Foto das nossas maozinhas</div>
+                    </div>
+                    <div class="moment-card" style="background-image: url(./imagens/datezinho\ 1.jpeg)">
+                        <div class="moment-overlay">Dupla fodinha dos tenis</div>
+                    </div>
+                </div>
+
+                <h2 class="section-heading">Nosso segundo <span>encontro</span></h2>
+                <div class="moments-grid">
+                    <div class="moment-card" style="background-image: url(./imagens/2\ datezinho.jpeg)">
+                        <div class="moment-overlay">Isso, isso é a mulher da minha vida...</div>
+                    </div>
+                    <div class="moment-card" style="background-image: url(./imagens/2\ datezinhoo.jpeg)">
+                        <div class="moment-overlay">Eu estava bem confortável aqui</div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="moment-card">
+                        <video class="moment-video" pause loop playsinline>
+                            <source src="./imagens/video-date-2.mp4" type="video/mp4">
+                        </video>
+                        <div class="moment-overlay">Aí eu te conheci e tudo mudou...</div>
+                    </div>
+                </div>
+
+
+                <h2 class="section-heading">Fotos que eu<span> AMO</span></h2>
+                <div class="moments-grid">
+                    <div class="moment-card" style="background-image: url(./imagens/fefe\ -\ 1.jpeg)">
+                        <div class="moment-overlay"></div>
+                    </div>
+                    <div class="moment-card"
+                        style="background-image: url(./imagens/nunca\ me\ senti\ tao\ especial.jpeg)">
+                        <div class="moment-overlay"></div>
+                    </div>
+                    <div class="moment-card" style="background-image: url(./imagens/brabuleta.jpg)">
+                        <div class="moment-overlay"></div>
+                    </div>
+
+                    <div class="moment-card" style="background-image: url(imagens/console.jpg)">
+                        <div class="moment-overlay"></div>
+                    </div>
+                    <div class="moment-card" style="background-image: url(imagens/vhs-edition.jpg)">
+                        <div class="moment-overlay"></div>
+                    </div>
+                    <div class="moment-card" style="background-image: url(imagens/pussy.jpg)">
+                        <div class="moment-overlay"></div>
+                    </div>
+                    <div class="moment-card" style="background-image: url(imagens/retro.jpg)">
+                        <div class="moment-overlay"></div>
+                    </div>
+                    <div class="moment-card" style="background-image: url(imagens/fefe-2.jpg)">
+                        <div class="moment-overlay"></div>
+                    </div>
+            </section>
+
+            <h2 class="section-heading">A foto que mais<span> amo</span></h2>
+                    <div class="favorite-card" style="background-image: url(./imagens/top-1.jpg)">
+                        <div class="moment-overlay">Eu te amo muito muito</div>
+                    </div>
+
+            <h2 class="section-heading"><span>Poema para você</span></h2>
+            <section class="closing-section">
+                <p>Ela é a Lua - toda mistério e maré, <br>
+                    feita de fases e segredos na pele. <br>
+                    Eu sou o Sol - teimoso e quente, <br>
+                    queimando só pra vê-la sorrir. <br>
+                    <br>
+                    <br>
+                    De dia, eu pinto o céu de azul e ouro, <br>
+                    mas conto as horas pro seu desabrochar. <br>
+                    Ela chega quando a luz se cansa, <br>
+                    me ensinando a brilhar sem queimar. <br>
+                    <br>
+                    <br>
+                    Nosso amor é eclipse e alvorada, <br>
+                    dança de luz que nunca se apaga: <br>
+                    eu ilumino seu lado escuro, <br>
+                    ela acalma meu fogo sem palavras. <br>
+                    <br>
+                    <br>
+                    E quando o universo questionar <br>
+                    porque noite e dia se uniram assim, <br>
+                    seremos a resposta mais simples: <br>
+                    destinos que o tempo escreveu pra nós dois.
+                </p>
+                <h2 class="section-heading"><span></span></h2>
+            </section>
+        </main>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
