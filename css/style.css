@@ -270,7 +270,18 @@ body {
 .favorite-card {
     height: 550px;
     background-size: cover;
-    background-position: bottom;
+    background-position:bottom;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+.kiss-card {
+    height: 550px;
+    background-size: cover;
+    background-position: 10% 40%;
     border-radius: 6px;
     position: relative;
     overflow: hidden;
