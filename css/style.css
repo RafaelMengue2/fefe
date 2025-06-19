@@ -431,3 +431,131 @@ body {
         gap: 0.5rem;
     }
 }
+.carrossel-container {
+    position: relative;
+    max-width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+}
+
+/* Área do carrossel que contém os slides */
+.carrossel {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Estilos para cada slide individual */
+.slide {
+    min-width: 100%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container da imagem com fundo transparente */
+.img-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+/* Estilos para as imagens dentro do container */
+.img-container img {
+    background-size: cover;
+    background-position:bottom;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+/* Estilos para o texto do slide */
+.slide-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    text-align: center;
+    width: max-content;
+    max-width: 90%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Estilos para os botões de navegação */
+.carrossel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    z-index: 10;
+}
+
+.carrossel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Posicionamento do botão anterior */
+.prev-btn {
+    left: 10px;
+}
+
+/* Posicionamento do botão próximo */
+.next-btn {
+    right: 10px;
+}
+
+/* Container dos indicadores */
+.indicadores {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+/* Estilos para cada indicador */
+.indicador {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilo para o indicador ativo */
+.indicador.active {
+    background-color: white;
+}
+
+/* Opcional: Efeito de hover nos indicadores */
+.indicador:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
